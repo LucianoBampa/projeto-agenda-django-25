@@ -94,7 +94,7 @@ postgres=# create role usuario_agenda with login superuser createdb createrole p
 CREATE ROLE
 postgres=# create database projeto_agenda with owner usuario_agenda;
 CREATE DATABASE
-postgres=# grant all privileges on database projeto_agenda to usuario_agenda;
+postgres=# grant all privileges on database base_de_dados to usuario_agenda;
 GRANT
 postgres=# \q
 
