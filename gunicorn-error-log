@@ -1211,3 +1211,233 @@
  - - [26/Jul/2025:22:10:59 -0300] "GET / HTTP/1.1" 200 11119 "http://192.168.1.18/contact/1001/delete/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
 [2025-07-26 22:11:01 -0300] [23226] [DEBUG] GET /
  - - [26/Jul/2025:22:11:01 -0300] "GET / HTTP/1.1" 200 11119 "http://192.168.1.18/contact/1001/delete/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+[2025-07-26 22:19:11 -0300] [23219] [INFO] Handling signal: term
+[2025-07-26 22:19:11 -0300] [23223] [INFO] Worker exiting (pid: 23223)
+[2025-07-26 22:19:11 -0300] [23224] [INFO] Worker exiting (pid: 23224)
+[2025-07-26 22:19:11 -0300] [23226] [INFO] Worker exiting (pid: 23226)
+[2025-07-26 22:19:11 -0300] [23222] [INFO] Worker exiting (pid: 23222)
+[2025-07-26 22:19:11 -0300] [23227] [INFO] Worker exiting (pid: 23227)
+[2025-07-26 22:19:11 -0300] [23225] [INFO] Worker exiting (pid: 23225)
+[2025-07-26 22:19:12 -0300] [23219] [INFO] Shutting down: Master
+[2025-07-26 22:19:12 -0300] [23499] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/luciano/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/luciano/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7e8c44d8d1c0>
+  on_reload: <function OnReload.on_reload at 0x7e8c44d8d300>
+  when_ready: <function WhenReady.when_ready at 0x7e8c44d8d440>
+  pre_fork: <function Prefork.pre_fork at 0x7e8c44d8d580>
+  post_fork: <function Postfork.post_fork at 0x7e8c44d8d6c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7e8c44d8d800>
+  worker_int: <function WorkerInt.worker_int at 0x7e8c44d8d940>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7e8c44d8da80>
+  pre_exec: <function PreExec.pre_exec at 0x7e8c44d8dbc0>
+  pre_request: <function PreRequest.pre_request at 0x7e8c44d8dd00>
+  post_request: <function PostRequest.post_request at 0x7e8c44d8dda0>
+  child_exit: <function ChildExit.child_exit at 0x7e8c44d8dee0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7e8c44d8e020>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7e8c44d8e160>
+  on_exit: <function OnExit.on_exit at 0x7e8c44d8e2a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7e8c44d8e480>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2025-07-26 22:19:12 -0300] [23499] [INFO] Starting gunicorn 23.0.0
+[2025-07-26 22:19:12 -0300] [23499] [DEBUG] Arbiter booted
+[2025-07-26 22:19:12 -0300] [23499] [INFO] Listening at: unix:/run/agenda.socket (23499)
+[2025-07-26 22:19:12 -0300] [23499] [INFO] Using worker: sync
+[2025-07-26 22:19:12 -0300] [23510] [INFO] Booting worker with pid: 23510
+[2025-07-26 22:19:12 -0300] [23513] [INFO] Booting worker with pid: 23513
+[2025-07-26 22:19:12 -0300] [23518] [INFO] Booting worker with pid: 23518
+[2025-07-26 22:19:12 -0300] [23519] [INFO] Booting worker with pid: 23519
+[2025-07-26 22:19:12 -0300] [23520] [INFO] Booting worker with pid: 23520
+[2025-07-26 22:19:12 -0300] [23522] [INFO] Booting worker with pid: 23522
+[2025-07-26 22:19:12 -0300] [23499] [DEBUG] 6 workers
+[2025-07-26 22:19:20 -0300] [23510] [DEBUG] GET /
+ - - [26/Jul/2025:22:19:20 -0300] "GET / HTTP/1.1" 200 11119 "http://192.168.1.18/contact/1001/delete/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+[2025-07-26 22:21:07 -0300] [23513] [INFO] Worker exiting (pid: 23513)
+[2025-07-26 22:21:07 -0300] [23499] [INFO] Handling signal: term
+[2025-07-26 22:21:07 -0300] [23510] [INFO] Worker exiting (pid: 23510)
+[2025-07-26 22:21:07 -0300] [23519] [INFO] Worker exiting (pid: 23519)
+[2025-07-26 22:21:07 -0300] [23522] [INFO] Worker exiting (pid: 23522)
+[2025-07-26 22:21:07 -0300] [23518] [INFO] Worker exiting (pid: 23518)
+[2025-07-26 22:21:07 -0300] [23520] [INFO] Worker exiting (pid: 23520)
+[2025-07-26 22:21:07 -0300] [23499] [INFO] Shutting down: Master
+[2025-07-26 22:21:07 -0300] [23559] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/luciano/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/luciano/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7c6e423111c0>
+  on_reload: <function OnReload.on_reload at 0x7c6e42311300>
+  when_ready: <function WhenReady.when_ready at 0x7c6e42311440>
+  pre_fork: <function Prefork.pre_fork at 0x7c6e42311580>
+  post_fork: <function Postfork.post_fork at 0x7c6e423116c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7c6e42311800>
+  worker_int: <function WorkerInt.worker_int at 0x7c6e42311940>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7c6e42311a80>
+  pre_exec: <function PreExec.pre_exec at 0x7c6e42311bc0>
+  pre_request: <function PreRequest.pre_request at 0x7c6e42311d00>
+  post_request: <function PostRequest.post_request at 0x7c6e42311da0>
+  child_exit: <function ChildExit.child_exit at 0x7c6e42311ee0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7c6e42312020>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7c6e42312160>
+  on_exit: <function OnExit.on_exit at 0x7c6e423122a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7c6e42312480>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2025-07-26 22:21:07 -0300] [23559] [INFO] Starting gunicorn 23.0.0
+[2025-07-26 22:21:07 -0300] [23559] [DEBUG] Arbiter booted
+[2025-07-26 22:21:07 -0300] [23559] [INFO] Listening at: unix:/run/agenda.socket (23559)
+[2025-07-26 22:21:07 -0300] [23559] [INFO] Using worker: sync
+[2025-07-26 22:21:07 -0300] [23574] [INFO] Booting worker with pid: 23574
+[2025-07-26 22:21:07 -0300] [23575] [INFO] Booting worker with pid: 23575
+[2025-07-26 22:21:07 -0300] [23576] [INFO] Booting worker with pid: 23576
+[2025-07-26 22:21:07 -0300] [23577] [INFO] Booting worker with pid: 23577
+[2025-07-26 22:21:08 -0300] [23578] [INFO] Booting worker with pid: 23578
+[2025-07-26 22:21:08 -0300] [23580] [INFO] Booting worker with pid: 23580
+[2025-07-26 22:21:08 -0300] [23559] [DEBUG] 6 workers
+[2025-07-26 22:21:20 -0300] [23574] [DEBUG] GET /
+ - - [26/Jul/2025:22:21:20 -0300] "GET / HTTP/1.1" 200 11119 "http://192.168.1.18/contact/1001/delete/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
